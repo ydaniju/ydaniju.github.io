@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+description: "An expose into how to use Jekyll"
 date:   2017-07-16 20:47:23 +0100
 categories: jekyll update
+source: meta_play
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
