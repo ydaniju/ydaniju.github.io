@@ -6,11 +6,25 @@ date:   2017-07-22 11:33:23 +0100
 categories: jekyll update
 source: meta_play
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Chances are whn you begin to learn web development you focus more on how to build beautiful and responsive websites. Achieveing this mean syou'd spend more time 
+writing hundreds or thousands of lines of code within the `<body>` tag. Should you have a reason to write anything within the head, it would be to include some `js` or 
+`css` code.
 
-Jekyll also offers powerful support for code snippets:
+This is how my story was anyway until I learn my lesson the hard way when I 
+just finished what I thought was a good job—responsive, beautiful easy to 
+navigate. The display on resizing my browser was like in this example:
+
+<div class="desc-img">
+  <img src="{{site.url}}/assets/images/responsive_browser.png" width="400" alt="responsive browser"/>
+</div>
+
+I didn't notice my error until I was at home the following weekend and decided to peruse my beatiful work during the week. I was shocked when I saw it on a 
+**real** mobile device—my phone.
+
+<div class="desc-img">
+  <img src="{{site.url}}/assets/images/no_scale_meta.png" width="400" alt="mobile browser without scale meta"/>
+</div>
 
 {% highlight ruby %}
 def print_hi(name)
