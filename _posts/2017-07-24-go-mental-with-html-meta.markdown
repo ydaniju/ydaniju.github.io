@@ -7,35 +7,46 @@ categories: jekyll update
 source: meta_play
 ---
 
-Chances are whn you begin to learn web development you focus more on how to build beautiful and responsive websites. Achieveing this mean syou'd spend more time 
-writing hundreds or thousands of lines of code within the `<body>` tag. Should you have a reason to write anything within the head, it would be to include some `js` or 
-`css` code.
+Chances are when you begin to learn web development you focus more on how to 
+build beautiful and responsive websites. Achieving this mean you'd spend more 
+time writing hundreds or thousands of lines of code within the `<body>` tag. 
+Should you have a reason to write anything within the head, it would likely be 
+to include some `js` or `css` code.
 
-This is how my story was anyway until I learn my lesson the hard way when I 
-just finished what I thought was a good job—responsive, beautiful easy to 
+This is how my story was anyway until I learnt my lesson the hard way when I 
+just finished what I thought was a good job—responsive, beautiful, and easy to 
 navigate. The display on resizing my browser was like in this example:
 
-<div class="desc-img">
+<figure class="desc-img">
+  <figcaption>Fig 1 - Page display from resized desktop window.</figcaption>
   <img src="{{site.url}}/assets/images/responsive_browser.png" width="400" alt="responsive browser"/>
-</div>
+</figure>
 
-I didn't notice my error until I was at home the following weekend and decided to peruse my beatiful work during the week. I was shocked when I saw it on a 
+I didn't notice my error until I was at home the following weekend and decided to peruse my beautiful work during the week. I was shocked when I saw it on a 
 **real** mobile device—my phone.
 
-<div class="desc-img">
+<figure class="desc-img">
+  <figcaption>Fig 2 - Page display on mobile browser before adding viewport meta.</figcaption>
   <img src="{{site.url}}/assets/images/no_scale_meta.png" width="400" alt="mobile browser without scale meta"/>
-</div>
+</figure>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+After doing my research, I realized that my pages' `head` is missing the 
+<a href="https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag"
+ target="_blank">
+viewport meta tag</a>. Throwing it somewhere in the head like so 
+
+{% highlight html %}
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>My Blog</title>
+    </head>
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+After this simple addition, the mobile browser display was just as it was for the resized browser!
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<figure class="desc-img">
+  <figcaption>Fig 3 - Page display on mobile browser after adding viewport meta.</figcaption>
+  <img src="{{site.url}}/assets/images/scale_meta.png" width="400" alt="mobile browser with scale meta"/>
+</figure>
