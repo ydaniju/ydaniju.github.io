@@ -4,6 +4,7 @@ title:  "Go mental with HTML meta"
 description: "We like to build very beautiful web interfaces and spend all out ime making everything inside the <body> beautiful. Why do we neglect the <head>"
 date:   2017-07-22 11:33:23 +0100
 categories: jekyll update
+permalink: go_mental_with_html_meta
 source: meta_play
 ---
 
