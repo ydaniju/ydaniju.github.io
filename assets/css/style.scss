@@ -12,3 +12,26 @@
     }
   }
 }
+
+.desc-img {
+  box-sizing: border-box;
+  margin: 20px auto;
+  max-height: 400px;
+  overflow: scroll;
+  position: relative;
+  text-align: center;
+
+  img {
+    box-shadow: 5px 5px 30px rgba(44,47,56,0.3);
+    height: auto;
+    max-width: 100%;
+    width: auto\9;
+  }
+
+  figcaption {
+    background: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+  }
+}
