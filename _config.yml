@@ -17,7 +17,7 @@ title: Y Daniju?
 email: danijuyusuf@gmail.com
 description: Software-related blogposts from Yusuf Daniju
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ydaniju.github.io/"
 twitter_username: ydaniju
 github_username:  ydaniju
 
