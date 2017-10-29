@@ -19,7 +19,7 @@ to check my beautiful work from the past week. I was shocked when I saw it on a
 
 <figure class="desc-img">
   <figcaption>Fig 2 - Page display on mobile browser before adding viewport meta.</figcaption>
-  <img src="no_scale_meta.png" width="400" alt="mobile browser without scale meta"/>
+  <img src="no_scale_meta.png" width="400" height="400" alt="mobile browser without scale meta"/>
 </figure>
 
 After doing my research, I realized that my pages' `head` is missing the 
