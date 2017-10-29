@@ -47,4 +47,13 @@ It turns out that the meta tags found in the head tags of web pages aren't just
 for decorative reasons. They get lesser credit than they deserve from naive 
 developers like I was
 
-## So what really are do meta tags anyway?
+## So what really are do meta elements anyway?
+
+According to [w3.org](https://www.w3.org/TR/html5/document-metadata.html#the-meta-element)
+"The meta element represents various kinds of metadata that cannot be expressed using the title, base,link, style, and script elements."
+
+Metadata are a set of data that describes and gives information about other data.
+
+In other words, your meta elements enclose information about ypur web page.
+
+## Scenarios
