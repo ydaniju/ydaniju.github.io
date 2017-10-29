@@ -1,3 +1,5 @@
+# Go Mental with HTML Meta
+
 Chances are when you begin to learn web development you focus more on how to 
 build beautiful and responsive websites. Achieving this mean you'd spend more 
 time writing hundreds or thousands of lines of code within the `<body>` tag. 
@@ -22,7 +24,26 @@ to check my beautiful work from the past week. I was shocked when I saw it on a
   <img src="no_scale_meta.png" width="400" height="400" alt="mobile browser without scale meta"/>
 </figure>
 
-After doing my research, I realized that my pages' `head` is missing the 
+After doing my research, I was able to fix the problem. We'd discuss that under the 
+scenarios where metas are very helpful.
+
+Lesson learnt from that experience was meta elements found in the head tags of 
+web pages aren't just for decorative reasons. They get lesser credit than they deserve 
+and should be take seriously.
+
+## So what really are do meta elements anyway?
+
+According to [w3.org](https://www.w3.org/TR/html5/document-metadata.html#the-meta-element)
+"The meta element represents various kinds of metadata that cannot be expressed using the title, base,link, style, and script elements."
+
+Metadata are a set of data that describes and gives information about other data.
+
+In other words, your meta elements enclose information about ypur web page.
+
+## Scenarios
+
+
+I realized that my pages' `head` is missing the 
 <a href="https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag"
  target="_blank">
 viewport meta tag</a>. Throwing it somewhere in the head like so 
@@ -42,18 +63,3 @@ After this simple addition, the mobile browser display was just as it was for th
   <figcaption>Fig 3 - Page display on mobile browser after adding viewport meta.</figcaption>
   <img src="scale_meta.png" width="400" alt="mobile browser with scale meta"/>
 </figure>
-
-It turns out that the meta tags found in the head tags of web pages aren't just 
-for decorative reasons. They get lesser credit than they deserve from naive 
-developers like I was
-
-## So what really are do meta elements anyway?
-
-According to [w3.org](https://www.w3.org/TR/html5/document-metadata.html#the-meta-element)
-"The meta element represents various kinds of metadata that cannot be expressed using the title, base,link, style, and script elements."
-
-Metadata are a set of data that describes and gives information about other data.
-
-In other words, your meta elements enclose information about ypur web page.
-
-## Scenarios
