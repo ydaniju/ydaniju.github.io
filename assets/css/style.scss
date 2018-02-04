@@ -4,7 +4,12 @@
 @import '{{ site.theme }}';
 
 #main-content {
-  h3 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     &::before {
       content: '';
       margin-left: initial;
