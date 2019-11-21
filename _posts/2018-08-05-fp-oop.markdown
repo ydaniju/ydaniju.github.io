@@ -1,0 +1,8 @@
+---
+layout: post
+title:  Functional Programming is for All
+description: "OOP FP"
+date:   2018-08-05 11:33:23 +0100
+permalink: fp_in_oop
+---
+When programmers mention Object-Oriented Programming and Functional Programming in one discussion, it's often in a way that the one gets the feeling that both they are mutually exclusive and therefore, one can only choose OOP or FP but not both. However, this notion is incorrect. FP is an approach to programming that handles every computation by evaluating them as mathematical function and avoids changing-state and mutable data.
