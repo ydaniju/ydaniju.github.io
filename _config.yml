@@ -24,7 +24,7 @@ github_username:  ydaniju
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-architect
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
